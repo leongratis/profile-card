@@ -30,7 +30,6 @@ main .bottom-pic{
     position: absolute;
     bottom: -70px;
     right: -200px;
-
 }
 
 
@@ -55,6 +54,7 @@ section .image{
     border-radius: 100%;
     border: 4px solid white;
 }
+
 .top{
     height: 150px;
     background: url(photo/bg-pattern-card.svg);
