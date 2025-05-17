@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+main .top-pic{
+    width: 380px;
+    position: absolute;
+    top: -110px;
+    left: -180px;
+    
+}
+main .bottom-pic{
+    width: 380px;
+    height: auto;
+    position: absolute;
+    bottom: -70px;
+    right: -200px;
+
+}
+
+
+section{
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
+}
+
+section .image{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.image img{ 
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: -55px;
+    border-radius: 100%;
+    border: 4px solid white;
+}
+.top{
+    height: 150px;
+    background: url(photo/bg-pattern-card.svg);
+    border-radius: 10px 10px 0 0;
+}
+
+.middle{
+    text-align: center;
+    margin-top: 4.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.middle h1{
+    font-family: "kumbh sans", sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    opacity: .8;
+}
+
+.middle h1 span{
+    font-family: "kumbh sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: .6;
+    margin-left: 0.4rem;
+}
+
+.middle h2{
+    font-family: "kumbh sans", sans-serif;
+    margin-top: .5rem;
+    font-weight: 600;
+    font-size: .9rem;
+    opacity: .4;
+}
+
+hr{
+    opacity: .6;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.data{
+    text-align: center;
+}
+
+.data h2{
+    font-family: "kumbh sans", sans-serif;
+    opacity: .8;
+    font-size: 19px;
+    font-weight: 790;
+}
+
+.data P{
+    font-family: "kumbh sans", sans-serif;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    opacity: .5;
+    margin-top: 0.2rem;
+}
+
+
+@media screen and (min-width: 750px)
+{
+
+    main{
+        
+    }
+
+    section{
+    
+        width: 500px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    section .image{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    .image img{ 
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        top: -55px;
+        border-radius: 100%;
+        border: 4px solid white;
+    }
+
+
+    main .top-pic{
+        width: 550px;
+        position: absolute;
+        top: -180px;
+        left: -25px;
+        overflow: hidden;
+    }
+    main .bottom-pic{
+        width: 550px;
+        position: absolute;
+        bottom: -160px;
+        right: -20px;
+        overflow: hidden;
+    }
+}
